@@ -89,6 +89,8 @@ spring.kafka.consumer.auto-offset-reset=earliest
 3. Run **Consumer** Spring Boot application.
 4. Use Postman collection to send transaction payloads.
 
+   postman collection link : https://api.postman.com/collections/21485178-a3e04f94-0d20-4885-ba93-8caa8acdfc0a?access_key=PMAT-01K7V1HM6MFVGE3CMKW1XZJY9B
+
 ## Example Transaction Payload 💰
 
 ```json
