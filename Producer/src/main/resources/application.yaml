@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Producer
+  kafka:
+    topic:
+      name: producer_topic
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  security:
+    user:
+      name: admin
+      password: admin
+
+transactions:
+  batch:
+    size: 10
+  threads:
+    corePoolSize: 2
+    maxPoolSize: 4
+    queueCapacity: 100
+    namePrefix: asyncTransactionExecutor
+
+# DB properties can be added here if required

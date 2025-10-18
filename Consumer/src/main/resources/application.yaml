@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Consumer
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: consumer
+      properties:
+        spring.json.trusted.packages: "*"
+      auto-offset-reset: earliest
+    topic:
+      name: producer_topic
+
+server:
+  port: 8081
+
+# DB properties can be added here if required

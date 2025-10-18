@@ -111,4 +111,11 @@ spring.kafka.consumer.auto-offset-reset=earliest
 
 ---
 
+
+## License
+
+This project is **open-source** and can be freely used as a template for Kafka + Spring Boot projects.
+
+Author details: saiprakashmarella3277@gmail.com
+
 Made with ❤️ for scalable Kafka + Spring Boot applications.
